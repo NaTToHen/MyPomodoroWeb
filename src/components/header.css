@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
+
+body {
+   background-color: #5772FF;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-family: 'Baloo Bhai 2', sans-serif;
+   padding: 0px 2%;
+   background: #3757FF;
+   color: white;
+   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.nomeApp {
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.btnConfig {
+   z-index: 1000;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.btnConfig:hover, .nomeApp:hover {
+   transform: scale(1.05);
+}
