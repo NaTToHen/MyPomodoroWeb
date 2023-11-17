@@ -16,6 +16,7 @@
 }
 
 .containerTimer {
+   transition: 0.3s;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -27,6 +28,15 @@
    border-radius: 100%;
    border: solid 7px #3757FF;
    box-shadow: 0px 0px 10px 0px rgba(0, 41, 255, 0.61);
+}
+
+.containerTimer:hover {
+   background: #3757FF;
+   border: solid 7px white;
+   transform: scale(1.02);
+   .tempoTimer {
+      color: white;
+   }
 }
 
 .tempoTimer {
@@ -94,6 +104,7 @@
    flex-direction: column;
    align-items: center;
    width: 100%;
+   margin-bottom: 30px;
 }
 
 .itemConfig h1 {
@@ -113,9 +124,53 @@
 }
 
 .circulo {
+   cursor: pointer;
    width: 55px;
    height: 55px;
    border-radius: 100%;
+}
+
+.tempos {
+   justify-content: space-around;
+   cursor: pointer;
+}
+
+.tempos h1, h2 {
+   font-size: 24px;
+   color: #CDD5FF;
+}
+
+.divMetade {
+   margin-top: 10px;
+   display: flex;
+   width: 100%;
+   gap: 10px;
+}
+
+.divMetade h1, h2 {
+   font-size: 20px;
+}
+
+.escolhas {
+   display: flex;
+   gap: 10px;
+}
+
+.outros {
+   gap: 10px;
+   font-size: 24px;
+   color: #CDD5FF;
+   justify-content: space-around;
+   cursor: pointer;
+}
+
+.configs h1, h2 {
+   font-size: 24px;
+   color: #CDD5FF;
+}
+
+.configs {
+   justify-content: space-around;
 }
 
 #temaPadrao {
